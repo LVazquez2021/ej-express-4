@@ -16,7 +16,6 @@ app.get('/', function(req, res) {
     res.sendFile(url)
 })
 
-
 app.post('/saludo', function(req, res) {
     const { nombre, apellido, apodo } = req.body;
     if (nombre === '' || apellido === '' || apodo === '') {
